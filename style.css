@@ -1,0 +1,128 @@
+body {
+    background-color: bisque;
+    color: #fff;
+    font-family: Ubuntu, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(243, 158, 53);
+    box-shadow: 0 5px 15px -5px #00000070;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea, input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-family: Ubuntu, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #797979;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    font-family: Ubuntu, sans-serif;
+}
+
+button:hover {
+    background-color: #3b3b3b;
+    transition: 0.5s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: rgb(110, 62, 4);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+li:hover {
+    background-color: rgb(192, 110, 10);
+    transition: 0.5s;
+}
+
+li .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex: 1;
+    text-align: left;
+    margin-right: 10px;
+}
+
+li .buttons {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.deleteButton {
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    textarea, input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li span {
+        margin-bottom: 10px;
+    }
+
+    li .buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    li .buttons button {
+        width: 48%;
+    }
+}
